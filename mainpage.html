@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shoes Store</title>
+    <link href = "mainpage.css" rel= "stylesheet" type = "text/css">
+</head>
+<body>
+    <header>
+        <h1>NEVER GIVE UP "NIKE"</h1>
+        <div id="menu-container">
+            <button class="menu-btn" onclick="toggleMenu()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </button>
+
+            <div class="dropdown-content">
+                <a href="#" onclick="showPurchases()">Item Purchases</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="shoe-list">
+
+<div class="shoe">
+      <img src="shoes1.jpg" alt="Nike Air Force 1 '07">
+      <h2>Nike Air Force 1 '07</h2>
+      <p style="color: rgb(0, 0, 0);"> Price: ₱<span id="price1">5799.20</span></p>
+      <button onclick="addToCart('Nike Air Force 1', 5799.20)">Add to Cart</button>
+ </div>
+
+<div class="shoe">
+    <img src="shoe2.jpg" alt="Nike Air Force 1 '07 Premium">
+    <h2>Nike Air Force 1 '07 Premium</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price2">4999.99</span></p>
+    <button onclick="addToCart('Nike Air Force 1 Premium', 4999.99)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe3.jpg" alt="Jordan Courtside 23">
+    <h2>Jordan Courtside 23</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price3">5,919</span></p>
+    <button onclick="addToCart('Jordan Courtside 23', 5,919)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe4.jpg" alt="Nike Invincible 3">
+    <h2>Nike Invincible 3</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price4">5999.50</span></p>
+    <button onclick="addToCart('Nike Invincible 3', 5999.50)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe5.jpg" alt="Nike Air Flight Huarache">
+    <h2>Nike Air Flight Huarache</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price5">7999.99</span></p>
+    <button onclick="addToCart('Nike Air Flight Huarache', 7999.99)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe6.jpg" alt="Nike Air Max 90 Futura">
+    <h2>Nike Air Max 90 Futura</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price6">8999.25</span></p>
+    <button onclick="addToCart('Nike Air Max 90 Futura', 8999.25)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe7.jpg" alt="Nike Air Max Alpha Trainer 5">
+    <h2>Nike Air Max Alpha Trainer 5</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price7">7599.30</span></p>
+    <button onclick="addToCart('Nike Air Max Alpha Trainer 5', 7599.30)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe8.jpg" alt="Nike Air Max SYSTM">
+    <h2>Nike Air Max SYSTM</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price8">6799.99</span></p>
+    <button onclick="addToCart('Nike Air Max SYSTM', 6799.99)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe9.jpg" alt="Nike Air Max 1 '87 By You">
+    <h2>Nike Air Max 1 '87 By You</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price9">4999.50</span></p>
+    <button onclick="addToCart('Nike Air Max 1 By You', 4999.50)">Add to Cart</button>
+</div>
+
+<div class="shoe">
+    <img src="shoe10.jpg" alt="Nike Air Max 90 LTR SE">
+    <h2>Nike Air Max 90 LTR SE</h2>
+    <p style="color: rgb(0, 0, 0);">Price: ₱<span id="price10">8499.75</span></p>
+    <button onclick="addToCart('Nike Air Max 90 LTR SE', 8499.75)">Add to Cart</button>
+</div>
+    </section>
+
+    <section id="cart">
+        <h2 style="color: rgb(255, 255, 255);">Items</h2>
+        <ul id="cart-items">
+        </ul>
+        <p>Total: ₱<span id="total">0.00</span></p>
+        <button id="checkout-btn" onclick="checkout()">Go to Checkout</button>
+    </section>
+<script src="mainpage.js"> </script>
+</body>
+</html>

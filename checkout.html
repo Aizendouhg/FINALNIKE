@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Shoes Store - Checkout</title>
+    <link href = "checkout.css" rel= "stylesheet" type = "text/css">
+</head>
+<body>
+    <header>
+        <h1>Nike Shoes Store - Checkout</h1>
+    </header>
+
+    <button id="back-btn" onclick="goBack()">
+        <div id="back-arrow"></div> Go Back
+    </button>
+
+    <section id="checkout-details">
+        <div id="checkout-items"></div>
+
+        <p id="total-amount">Total Amount: ₱0.00</p>
+        <button class="buy-now-btn" onclick="buyNow()">Buy Now</button>
+        <p id="item-purchased">Item Purchased</p>
+    </section>
+
+    <div id="loading-screen">
+        <p id="loading-text">Processing...</p>
+    </div>
+
+    <script src="checkout.js"> </script>
+</body>
+</html>

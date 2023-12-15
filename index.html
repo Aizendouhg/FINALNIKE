@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Store - Login</title>
+<link href = "index.css" rel= "stylesheet" type = "text/css">
+<script src="index.js"> </script>
+</head>
+<body>
+  <div id="login-container">
+    <h1>Login</h1>
+    <form onsubmit="return handleLogin(event)">
+      <input type="text" id="email" placeholder="Gmail Account" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button> 
+    </form>
+    <p>Don't have an account? <a href="registration.html" style="color: #f00;">Register</a></p>
+  </div>
+
+  <div id="loading-screen">
+    <p id="loading-screen-text">Logging in...</p>
+  </div>
+  <div id="alert-container">
+    <div id="custom-alert">
+        <p>Invalid email or password</p>
+    </div>
+</div>
+</body>
+</html>
